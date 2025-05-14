@@ -1,13 +1,15 @@
 body {
-  background-color: #f0f0f0;
-  color: #333;
+  background: #75b0f3; 
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#cccccc', endColorstr='#000000'); 
+  background: -webkit-gradient(linear, left top, left bottom, from(#75b0f3), to(#000536)); 
+  background: -moz-linear-gradient(top,  #75b0f3,  #000536);
   font-family: Arial, sans-serif;
   padding: 20px;
 }
 
 a {
     text-decoration: none;
-    color: black;
+    color: #ffffff;
 }
 
 header nav ul{
@@ -15,7 +17,7 @@ header nav ul{
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    color: black;
+    color: -webkit-gradient(linear, left top, left bottom, from(#75b0f3), to(#000536));
     font-size: 20px;
 }
 header nav ul {
@@ -32,7 +34,7 @@ header nav ul {
 }
 
 h1 {
-    color: black;
+    color: #ffffff;
     text-align: center;
     padding-top: 10%;
     margin: 0;
@@ -52,11 +54,11 @@ h1 {
 }
 
 h2 {
-    color: black;
+    color: #ffffff;
     text-align: center;
     padding-top: 0;
     margin: 0;
-    padding-bottom: 20%;
+    margin-bottom: 5%;
     font-size: 30px;
 }
 h2 {
@@ -83,4 +85,45 @@ h2 {
     text-indent: 5%;
     padding-top: 3%;
     margin: 0;
+}
+
+.contact-button {
+  justify-items: center;
+  padding: 0;
+  padding: 10px;
+  margin: 0;
+  margin-left: 90vh;
+  margin-bottom: 20%;
+  border-radius: 30px;
+  font-size: 5vh;
+  font-weight: bold;
+  background: #75b0f3; 
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#cccccc', endColorstr='#000000'); 
+  background: -webkit-gradient(linear, left top, left bottom, from(#75b0f3), to(#6672e0)); 
+  background: -moz-linear-gradient(top,  #75b0f3,  #000536);
+}
+.contact-button {
+  opacity: 0;
+  transform: translateY(-100px);
+  animation: slideIn 1s forwards;
+  animation-delay: 0.5s;
+}
+@keyframes slideIn {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.mission-sec div {
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 10%;
+    background: -webkit-gradient(linear, left top, left bottom, from(#75b0f3), to(#6672e0));
+    width: 250px;
+    height: 200px;
+    margin-top: 5%;
+    margin-left: 13%;
 }
