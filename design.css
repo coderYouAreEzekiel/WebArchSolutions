@@ -39,6 +39,7 @@ h1 {
     padding-top: 10%;
     margin: 0;
     font-size: 100px;
+    letter-spacing: 10px;
 }
 h1 {
   opacity: 0;
@@ -60,6 +61,7 @@ h2 {
     margin: 0;
     margin-bottom: 5%;
     font-size: 30px;
+    letter-spacing: 3px;
 }
 h2 {
   opacity: 0;
@@ -75,24 +77,55 @@ h2 {
 }
 
 .intro-div h3 {
-    font-size: 10vh;
+    font-size: 13vh;
     text-align: center;
     padding-top: 3%;
     margin: 0;
+
+    color: #ffffff;
+    letter-spacing: 1px;
+}
+.intro-div h3 {
+    opacity: 0;
+  transform: translateY(-100px);
+  animation: slideIn 1s forwards;
+  animation-delay: 0.5s;
+}
+@keyframes slideIn {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.intro-div p {
+    font-size: 2.2vh;
+    padding-top: 1%;
+    text-align: center;
+    margin: 0;
+    margin-top: 0px;
+    color:#ffffff;
+    letter-spacing: 1px;
 }
 .intro-div p {
-    font-size: 3vh;
-    text-indent: 5%;
-    padding-top: 3%;
-    margin: 0;
+  opacity: 0;
+  transform: translateY(-100px);
+  animation: slideIn 1s forwards;
+  animation-delay: 0.5s;
+}
+@keyframes slideIn {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
 
 .contact-button {
-  justify-items: center;
+  text-align: center;
   padding: 0;
   padding: 10px;
   margin: 0;
-  margin-left: 90vh;
+  margin-left: 40%;
   margin-bottom: 20%;
   border-radius: 30px;
   font-size: 5vh;
@@ -101,6 +134,7 @@ h2 {
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#cccccc', endColorstr='#000000'); 
   background: -webkit-gradient(linear, left top, left bottom, from(#75b0f3), to(#6672e0)); 
   background: -moz-linear-gradient(top,  #75b0f3,  #000536);
+  letter-spacing: 5px;
 }
 .contact-button {
   opacity: 0;
@@ -116,14 +150,217 @@ h2 {
 }
 
 .mission-sec div {
-    display: inline-block;
+    display: inline-table;
+    background: #75b0f3; 
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#cccccc', endColorstr='#000000'); 
+    background: -webkit-gradient(linear, left top, left bottom, from(#75b0f3), to(#6672e0)); 
+    background: -moz-linear-gradient(top,  #75b0f3,  #000536);
+    border-radius: 30px;
+    padding: 20px;
+    margin-top: 5%;
+    margin-left: 7%;
+    justify-content: space-between;
+    text-align: center;
+    width: 300px;
+    height: 300px;
+    margin-bottom: 20%;
+}
+.mission-sec div {
+    opacity: 0;
+  transform: translateY(-100px);
+  animation: slideIn 1s forwards;
+  animation-delay: 0.5s;
+}
+@keyframes slideIn {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.mission-sec div h3 {
+    font-size: 5vh;
+    text-align: center;
+    padding-top: 30%;
+    margin: 0;
+    color: #ffffff;
+    letter-spacing: 1px;
+}
+.mission-sec div p {
+    font-size: 3.2vh;
+    padding-top: 1%;
+    text-align: center;
+    margin: 0;
+    margin-top: 10px;
+    color:#ffffff;
+    letter-spacing: 1px;
+}
+
+.social-sec {
     justify-content: center;
     align-items: center;
-    text-align: center;
-    border-radius: 10%;
-    background: -webkit-gradient(linear, left top, left bottom, from(#75b0f3), to(#6672e0));
-    width: 250px;
-    height: 200px;
     margin-top: 5%;
-    margin-left: 13%;
+}
+.social-sec h3 {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 5vh;
+    margin: 0 10%;
+}
+.social-sec p {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 5vh;
+    margin: 0 10%;
+    padding-bottom: 10px;
+}
+.social-sec .social-icons {
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+    margin: 0 10%;
+}
+
+footer {
+  text-align: center;
+  color: #ffffff;
+  margin-top: 10%;
+}
+
+@media only screen and (min-width:320px) and (max-width:768px) {
+  /* For tablets: */
+  header nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    color: -webkit-gradient(linear, left top, left bottom, from(#75b0f3), to(#000536));
+    font-size: 10px;
+    margin: 0;
+    padding: 0;
+  }
+
+  h1 {
+    color: #ffffff;
+    text-align: center;
+    justify-content: center;
+    padding-top: 30%;
+    margin: 0;
+    font-size: 40px;
+    letter-spacing: 10px;
+  }
+  h2 {
+    color: #ffffff;
+    text-align: center;
+    padding-top: 0;
+    margin: 0;
+    margin-bottom: 5%;
+    font-size: 10px;
+    letter-spacing: 3px;
+  }
+
+  .intro-div h3 {
+    font-size: 5vh;
+    text-align: center;
+    padding-top: 3%;
+    margin: 0;
+
+    color: #ffffff;
+    letter-spacing: 1px;
+  }
+  .intro-div p {
+    font-size: 2vh;
+    padding-top: 1%;
+    text-align: center;
+    margin: 0;
+    margin-top: 0px;
+    color:#ffffff;
+    letter-spacing: 1px;
+  }
+
+  .contact-button {
+    text-align: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    padding: 10px;
+    margin: 0;
+    margin-bottom: 20%;
+    border-radius: 30px;
+    font-size: 5vh;
+    font-weight: bold;
+    background: #75b0f3; 
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#cccccc', endColorstr='#000000'); 
+    background: -webkit-gradient(linear, left top, left bottom, from(#75b0f3), to(#6672e0)); 
+    background: -moz-linear-gradient(top,  #75b0f3,  #000536);
+    letter-spacing: 5px;
+  }
+
+  .mission-sec div {
+    display: inline-table;
+    background: #75b0f3; 
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#cccccc', endColorstr='#000000'); 
+    background: -webkit-gradient(linear, left top, left bottom, from(#75b0f3), to(#6672e0)); 
+    background: -moz-linear-gradient(top,  #75b0f3,  #000536);
+    border-radius: 30px;
+    padding: 20px;
+    margin-top: 5%;
+    margin-left: 7%;
+    justify-content: space-between;
+    text-align: center;
+    width: 90px;
+    height: 90px;
+    margin-bottom: 20%;
+  }
+  .mission-sec div h3 {
+    font-size: 5vh;
+    text-align: center;
+    padding-top: 30%;
+    margin-left: 50%;
+    margin-right: 50%;
+    margin: 0;
+    color: #ffffff;
+    letter-spacing: 1px;
+  }
+  .mission-sec div p {
+    font-size: 3.2vh;
+    padding-top: 1%;
+    text-align: center;
+    margin: 0;
+    margin-top: 10px;
+    color:#ffffff;
+    letter-spacing: 1px;
+  }
+
+  .social-sec {
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+  }
+  .social-sec h3 {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 5vh;
+    margin: 0 10%;
+  }
+  .social-sec p {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 5vh;
+    margin: 0 10%;
+    padding-bottom: 5px;
+  }
+  .social-sec .social-icons {
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+    margin: 0 10%;
+  }
+
+  footer {
+    text-align: center;
+    color: #ffffff;
+    margin-top: 20%;
+  }
 }
